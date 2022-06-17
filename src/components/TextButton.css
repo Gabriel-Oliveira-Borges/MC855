@@ -1,0 +1,18 @@
+.text-button {
+    font-family: 'Nunito' !important;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #5845ED;
+}
+
+.link:hover {
+    color: #5845ED;
+}
