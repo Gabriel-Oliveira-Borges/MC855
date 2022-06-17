@@ -5,7 +5,7 @@ import './Option.css'
 
 const Option = (props) => {
     let content;
-    console.log(props);
+    
     if (props.image != undefined) {
         content = (
             <div class="ui grid">
