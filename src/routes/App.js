@@ -1,5 +1,5 @@
 import React from "react";
-import Option from './Option'
+import Option from '../components/Option'
 import doctor from '../images/doctor 1.png'
 import './App.css'
 
