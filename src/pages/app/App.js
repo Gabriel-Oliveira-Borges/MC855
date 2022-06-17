@@ -1,6 +1,6 @@
 import React from "react";
-import Option from '../../components/Option'
-import TextButton from "../../components/TextButton";
+import Option from '../../components/option/Option'
+import TextButton from "../../components/textButton/TextButton";
 import ImageMap from '../../constants/images'
 import './App.css'
 

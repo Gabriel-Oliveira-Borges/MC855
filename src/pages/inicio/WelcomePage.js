@@ -1,7 +1,7 @@
 import React from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
-import TextButton from "../../components/TextButton";
-import Option from '../../components/Option'
+import TextButton from "../../components/textButton/TextButton";
+import Option from '../../components/option/Option'
 import ImageMap from '../../constants/images'
 import "./WelcomePage.css";
 
