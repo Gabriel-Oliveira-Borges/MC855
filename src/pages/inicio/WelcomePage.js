@@ -15,7 +15,7 @@ function WelcomePage() {
 					<div className="WelcomePageContent">
 						<Option
 							className="link-option"
-							link="/opa"
+							link="/cadastrado"
 							image={ImageMap["DOCTOR"]}
 							description="Já sou paciente do HC Unicamp"
 						/>

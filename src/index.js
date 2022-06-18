@@ -5,6 +5,7 @@ import './index.css';
 import App from './pages/app/App';
 import 'semantic-ui-css/semantic.min.css'
 import WelcomePage from './pages/inicio/WelcomePage';
+import PacienteJaCadastrado from './pages/paciente-ja-cadastrado/PacienteJaCadastrado';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/inicio" element={<WelcomePage/>} />
+      <Route path="/cadastrado" element={<PacienteJaCadastrado/>} />
     </Routes>
   </BrowserRouter>
 );
