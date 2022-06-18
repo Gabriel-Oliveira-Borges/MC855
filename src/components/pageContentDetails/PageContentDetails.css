@@ -1,0 +1,17 @@
+.PageContentDetails ul{
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    list-style: disc;
+}
+
+.PageContentDetails li{
+    text-decoration: none;
+    margin-bottom: 1em;
+    list-style: disc;
+    line-height: 1.4285em;
+}
+
+.PageContentDetails p{
+    margin-bottom: 1em;
+    line-height: 1.4285em;
+}

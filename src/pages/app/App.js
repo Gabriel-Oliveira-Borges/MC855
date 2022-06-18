@@ -11,7 +11,7 @@ const App = () => {
 			<Option
 				className="link-option"
 				link="/opa"
-				image={ImageMap["DOCTOR"]}
+				image={ImageMap["DOCTOR"].path}
 				description="Já sou paciente do HC Unicamp"
 			/>
 			<TextButton
