@@ -1,17 +1,18 @@
 import React from "react";
 import "./BasicPage.css";
 import PageHeader from "../pageHeader/PageHeader"
-import ImageMap from "../../constants/images"
 
-function BasicPage({ title, icon, content, footer}) {
+function BasicPage({ title, icon, content, footer, comeBackTo}) {
+
 	return (
 		<div className="BasicPage">
 			<PageHeader
 				title={title}
 				icon={icon}
+				comeBackTo = {comeBackTo}
 			/>
 
-			<div class="container">
+			<div className="container">
 				<div className="content">
 					{content}
 				</div>

@@ -1,0 +1,9 @@
+.PageContentOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PageContentOptions .Option{
+    margin-bottom: 25px;
+}

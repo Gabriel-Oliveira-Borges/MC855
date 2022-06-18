@@ -1,13 +1,13 @@
-.WelcomePage{
+.NewPacientPage{
     height: 100%;
 }
 
-/* .WelcomePage .WelcomePageContent{
+.NewPacientPage .NewPacientPageContent{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.WelcomePage .WelcomePageContent .Option{
+.NewPacientPage .NewPacientPageContent .Option{
     margin-bottom: 25px;
-} */
+}

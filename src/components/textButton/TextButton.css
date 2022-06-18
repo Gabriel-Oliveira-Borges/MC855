@@ -1,4 +1,4 @@
-.text-button {
+.TextButton.text-button {
     font-family: 'Nunito' !important;
     font-style: normal;
     font-weight: 800;
@@ -9,10 +9,10 @@
     text-transform: uppercase;
 }
 
-.link {
+.TextButton .link {
     color: #5845ED;
 }
 
-.link:hover {
+.TextButton .link:hover {
     color: #5845ED;
 }

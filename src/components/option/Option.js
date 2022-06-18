@@ -6,7 +6,7 @@ import './Option.css'
 const Option = (props) => {
     let content;
     
-    if (props.image != undefined) {
+    if (props.image !== undefined) {
         content = (
             <div class="ui grid">
                 <div class="four wide column">
