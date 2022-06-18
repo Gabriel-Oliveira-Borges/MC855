@@ -1,7 +1,6 @@
 import React from "react";
 import "./BasicPage.css";
 import PageHeader from "../pageHeader/PageHeader"
-import ImageMap from "../../constants/images"
 
 function BasicPage({ title, icon, content, footer}) {
 	return (

@@ -1,6 +1,7 @@
 import React from "react";
 import "./PageHeader.css";
 import ImageMap from "../../constants/images"
+import { Image } from "semantic-ui-react"
 
 function BasicPage({ title, icon}) {
 	return (
@@ -10,7 +11,7 @@ function BasicPage({ title, icon}) {
             </div>
 
             <div className="icon">
-                <img src={ImageMap[icon]}></img>
+                <Image src={ImageMap[icon]} size="medium" />
             </div>
         </div>
 	)

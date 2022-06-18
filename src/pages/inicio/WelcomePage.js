@@ -1,6 +1,6 @@
 import React from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
-import TextButton from "../../components/textButton/TextButton";
+import DefaultFooter from "../../constants/DefaultFooter";
 import Option from '../../components/option/Option'
 import ImageMap from '../../constants/images'
 import "./WelcomePage.css";
@@ -21,18 +21,13 @@ function WelcomePage() {
 						/>
 						<Option
 							className="link-option"
-							link="/opa"
+							link="/paciente-novo"
 							image={ImageMap["DOCTOR"]}
 							description="É a minha primeira vez no Ambulatório do HC"
 						/>
 					</div>
 				}	
-				footer={
-					<TextButton
-						link="/especialidades"
-						text="VER ESPECIALIDADES DO AMBULATÓRIO de pediatria"
-					/>
-				}
+				footer={<DefaultFooter />}
 			></BasicPage>
 		</div>
 	)
