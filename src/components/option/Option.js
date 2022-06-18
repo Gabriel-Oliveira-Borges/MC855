@@ -32,11 +32,13 @@ const Option = (props) => {
     }
 
     return (
-        <Link id="link-option" to={props.link}>
-            <Card className="card">
-                <Card.Content>{content}</Card.Content>
-            </Card>
-        </Link>
+        <div className="Option">
+            <Link id="link-option" to={props.link}>
+                <Card className="card">
+                    <Card.Content>{content}</Card.Content>
+                </Card>
+            </Link>
+        </div>
     )
 };
 
