@@ -46,6 +46,12 @@ const PacienteJaCadastrado = () => {
                         />
                     </div>
                 }
+                footer={
+                    <TextButton
+						link="/especialidades"
+						text="VER ESPECIALIDADES DO AMBULATÓRIO de pediatria"
+					/>
+                }
             />
         </div>
     )
