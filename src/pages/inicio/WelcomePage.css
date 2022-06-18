@@ -1,0 +1,13 @@
+.WelcomePage{
+    height: 100%;
+}
+
+.WelcomePage .WelcomePageContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WelcomePage .WelcomePageContent .Option{
+    margin-bottom: 25px;
+}

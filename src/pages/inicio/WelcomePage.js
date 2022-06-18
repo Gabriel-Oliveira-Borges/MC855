@@ -12,7 +12,7 @@ function WelcomePage() {
 				title="Boas-vindas ao Ambulatório de Pediatria do HC Unicamp!" 
 				icon="HEART"
 				content={
-					<div>
+					<div className="WelcomePageContent">
 						<Option
 							className="link-option"
 							link="/opa"
