@@ -13,9 +13,7 @@ const Option = (props) => {
                     <Image src={props.image} size='small' />
                 </div>
                 <div class="twelve wide column">
-                    <Card.Description>
-                        {props.description}
-                    </Card.Description>
+                    <Card.Description dangerouslySetInnerHTML={{__html: props.description}} />
                 </div>
             </div>
         )
@@ -23,9 +21,7 @@ const Option = (props) => {
         content = (
             <div class="ui grid">
                 <div class="sixteen wide column">
-                    <Card.Description>
-                        {props.description}
-                    </Card.Description>
+                <Card.Description dangerouslySetInnerHTML={{__html: props.description}} />
                 </div>
             </div>
         )
@@ -34,7 +30,7 @@ const Option = (props) => {
     return (
         <div className="Option">
             <Link id="link-option" to={props.link}>
-                <Card className="card">
+                <Card>
                     <Card.Content>{content}</Card.Content>
                 </Card>
             </Link>
