@@ -52,15 +52,27 @@ class OrientationService{
             options: [
                 {
 					link:"/consultas",
-					description:"<p class='item-lista'>- Consulta agendada</p><p class='item-lista'>- Encaixe por e-mail</p><p class='item-lista'>- Agendar consulta hoje</p>"
+					description:`
+                        <p class='item-lista'>- Consulta agendada</p>
+                        <p class='item-lista'>- Encaixe por e-mail</p>
+                        <p class='item-lista'>- Agendar consulta hoje</p>
+                    `
                 },
                 {
                     link:"/procedimentos",
-					description:"<p class='item-lista'>- Receber medicamento</p><p class='item-lista'>- Fazer teste ou curativo</p><p class='item-lista'>- Realizar outro procedimento</p>"
+					description:`
+                        <p class='item-lista'>- Receber medicamento</p>
+                        <p class='item-lista'>- Fazer teste ou curativo</p>
+                        <p class='item-lista'>- Realizar outro procedimento</p>
+                    `
                 },
                 {
                     link:"/atendimento",
-					description:"<p class='item-lista'>- Remarcar consulta</p><p class='item-lista'>- Pedir relatório, receita ou exames</p><p class='item-lista'>- Fazer uma pergunta</p>"
+					description:`
+                        <p class='item-lista'>- Remarcar consulta</p>
+                        <p class='item-lista'>- Pedir relatório, receita ou exames</p>
+                        <p class='item-lista'>- Fazer uma pergunta</p>
+                    `
                 }
             ]
         }
