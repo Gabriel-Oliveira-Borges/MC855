@@ -1,26 +1,37 @@
 .PageHeader {
-    height: 166px;
+    height: 206px;
     width: 100%;
     background-color: #5845ED;
-}
-
-.PageHeader > .title{
-    padding: 56px 10px 56px 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
     font-weight: 700;
     color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
+    line-height: 27px;
+}
+
+.PageHeader > .breadcrumb{
+  font-size: 18px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 24px 0px 24px;
+}
+
+.PageHeader .breadcrumb a{
+  color: #FFFFFF;
+}
+
+.PageHeader > .title{
+    padding: 85px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     max-width: 300px;
     margin: 0 auto;
-    line-height: 27px;
+    font-size: 20px;
 }
 
 .PageHeader > .icon{
   position: absolute;
-  top: 132px;
+  top: 170px;
   display: flex;
   justify-content: center;
   width: 100%;

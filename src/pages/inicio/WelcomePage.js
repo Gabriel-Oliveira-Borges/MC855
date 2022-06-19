@@ -1,37 +1,26 @@
 import React from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
-import TextButton from "../../components/textButton/TextButton";
-import Option from '../../components/option/Option'
-import ImageMap from '../../constants/images'
+import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton"
 import "./WelcomePage.css";
+import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
+import OrientationService from "../../libs/orientationsService";
+
+const service = new OrientationService()
 
 function WelcomePage() {
+
+	const details = service.welcome()
+
 	return (
 		<div className="WelcomePage">
 			<BasicPage 
-				title="Boas-vindas ao Ambulatório de Pediatria do HC Unicamp!" 
-				icon="HEART"
+				title={details.title}
+				icon={details.icon}
 				content={
-					<div className="WelcomePageContent">
-						<Option
-							className="link-option"
-							link="/cadastrado"
-							image={ImageMap["DOCTOR"]}
-							description="Já sou paciente do HC Unicamp"
-						/>
-						<Option
-							className="link-option"
-							link="/opa"
-							image={ImageMap["DOCTOR"]}
-							description="É a minha primeira vez no Ambulatório do HC"
-						/>
-					</div>
+					<PageContentOptions options={details.options}/>
 				}	
 				footer={
-					<TextButton
-						link="/especialidades"
-						text="VER ESPECIALIDADES DO AMBULATÓRIO de pediatria"
-					/>
+					<MedicalSpecialtyButton/>
 				}
 			></BasicPage>
 		</div>
