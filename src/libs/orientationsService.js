@@ -43,7 +43,7 @@ class OrientationService{
     }
 
     oldPatient() {
-        console.log("Welcome Page")
+        console.log("Old Patient Page")
 
         return {
             title:"Já sou paciente do HC Unicamp",

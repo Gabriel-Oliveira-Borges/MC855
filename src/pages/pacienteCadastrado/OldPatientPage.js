@@ -3,11 +3,11 @@ import BasicPage from '../../components/basicPage/BasicPage'
 import OrientationService from "../../libs/orientationsService";
 import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton";
 import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
-import './OldPatient.css'
+import './OldPatientPage.css'
 
 const service = new OrientationService()
 
-const OldPatient = () => {
+const OldPatientPage = () => {
     const details = service.oldPatient()
 
     return (
@@ -21,9 +21,10 @@ const OldPatient = () => {
                 footer={
 					<MedicalSpecialtyButton/>
 				}
+                comeBackTo={"/"}
             />
         </div>
     )
 }
 
-export default OldPatient;
+export default OldPatientPage;
