@@ -4,7 +4,15 @@ import ImageMap from "../../constants/images"
 import { Link } from 'react-router-dom'
 
 function BasicPage({ title, icon, comeBackTo}) {
-	return (
+    const img = () => {
+        if (icon === undefined) {
+            return null
+        } else {
+            return <img src={ImageMap[icon].path} alt={ImageMap[icon].altText} />
+        }
+    }
+
+    return (
         <div className="PageHeader">
             { 
                 comeBackTo ? 
@@ -21,9 +29,7 @@ function BasicPage({ title, icon, comeBackTo}) {
                 <span as='h1'> {title} </span>
             </div>
 
-            <div className="icon">
-                <img src={ImageMap[icon].path} alt={ImageMap[icon].altText}></img>
-            </div>
+            <div className="icon">{img()}</div>
         </div>
 	)
 }
