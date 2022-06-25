@@ -7,6 +7,10 @@
     border-radius: 16px !important;
 }
 
+.Option {
+    width: 342px;
+}
+
 .Option .content {
     padding: 24px !important;
 }

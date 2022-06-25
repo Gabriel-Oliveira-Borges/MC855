@@ -12,7 +12,7 @@ function PageContentOptions({ options }) {
 					return <Option
 						className="link-option"
 						link={item.link}
-						image={ImageMap[item.image].path}
+						image={item.image === undefined ? undefined : ImageMap[item.image].path}
 						description={item.description}
 					/>
 				})
