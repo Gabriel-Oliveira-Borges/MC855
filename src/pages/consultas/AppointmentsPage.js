@@ -20,7 +20,7 @@ function AppointmentsPage() {
 				icon={page.icon}
 				content={ <PageContentOptions options={page.options}/> }
 				footer={ <MedicalSpecialtyButton/> }
-				comeBackTo={"/consultas"}
+				comeBackTo={"/cadastrado"}
 			></BasicPage>
 		</div>
 	)
