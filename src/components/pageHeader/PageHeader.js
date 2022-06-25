@@ -18,7 +18,7 @@ function BasicPage({ title, icon, comeBackTo}) {
                 comeBackTo ? 
                 <div className="breadcrumb" > 
                     <Link className='link' to={comeBackTo}>
-                        <i class="angle left icon"></i>
+                        <i className="angle left icon"></i>
                         Voltar 
                     </Link>
                 </div> 

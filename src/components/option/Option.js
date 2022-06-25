@@ -8,19 +8,19 @@ const Option = (props) => {
     
     if (props.image !== undefined) {
         content = (
-            <div class="ui grid">
-                <div class="four wide column">
+            <div className="ui grid">
+                <div className="four wide column">
                     <Image src={props.image} size='small' />
                 </div>
-                <div class="twelve wide column">
+                <div className="twelve wide column">
                     <Card.Description dangerouslySetInnerHTML={{__html: props.description}} />
                 </div>
             </div>
         )
     } else {
         content = (
-            <div class="ui grid">
-                <div class="sixteen wide column">
+            <div className="ui grid">
+                <div className="sixteen wide column">
                 <Card.Description dangerouslySetInnerHTML={{__html: props.description}} />
                 </div>
             </div>
