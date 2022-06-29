@@ -5,6 +5,7 @@ import { getPage } from "../../database/PageDB.js"
 import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
 import "./WelcomePage.css";
 
+
 function WelcomePage() {
 	const [page, setPage] = useState(0)
 
