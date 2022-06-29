@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
-import "./NewPacientPage.css";
+import "./NewPatientPage.css";
 import PageContentDetails from "../../components/pageContentDetails/PageContentDetails";
 import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton";
 import { getPage } from "../../database/PageDB.js"
 
-function NewPacientPage() {
+function NewPatientPage() {
 	const [page, setPage] = useState(0)
 
 	useEffect(() => {
@@ -15,7 +15,7 @@ function NewPacientPage() {
 	}, [])
 
 	return (
-		<div className="NewPacientPage">
+		<div className="NewPatientPage">
 			<BasicPage 
 				title={page.title}
 				icon={page.icon}
@@ -27,4 +27,4 @@ function NewPacientPage() {
 	)
 }
 
-export default NewPacientPage;
+export default NewPatientPage;

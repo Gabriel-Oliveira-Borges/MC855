@@ -1,13 +1,13 @@
-.NewPacientPage{
+.NewPatientPage{
     height: 100%;
 }
 
-.NewPacientPage .NewPacientPageContent{
+.NewPatientPage .NewPatientPageContent{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.NewPacientPage .NewPacientPageContent .Option{
+.NewPatientPage .NewPatientPageContent .Option{
     margin-bottom: 25px;
 }
