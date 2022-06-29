@@ -1,0 +1,13 @@
+.NewPatientPage{
+    height: 100%;
+}
+
+.NewPatientPage .NewPatientPageContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NewPatientPage .NewPatientPageContent .Option{
+    margin-bottom: 25px;
+}

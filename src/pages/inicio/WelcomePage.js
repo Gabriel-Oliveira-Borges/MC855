@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
 import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton"
-import "./WelcomePage.css";
+import { getPage } from "../../database/PageDB.js"
 import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
-import OrientationService from "../../libs/orientationsService";
-
-const service = new OrientationService()
+import "./WelcomePage.css";
 
 function WelcomePage() {
+	const [page, setPage] = useState(0)
 
-	const details = service.welcome()
+	useEffect(() => {
+		getPage("welcome").then(p => {
+			setPage(p)
+		})
+	}, [])
 
 	return (
 		<div className="WelcomePage">
 			<BasicPage 
-				title={details.title}
-				icon={details.icon}
+				title={page.title}
+				icon={page.icon}
 				content={
-					<PageContentOptions options={details.options}/>
+					<PageContentOptions options={page.options}/>
 				}	
 				footer={
 					<MedicalSpecialtyButton/>
