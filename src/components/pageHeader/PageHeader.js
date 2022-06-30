@@ -26,7 +26,7 @@ function BasicPage({ title, icon, comeBackTo}) {
             }
 
             <div className="title" style={ comeBackTo ? {padding: "30px 10px 20px 10px"} : {}}>
-                <span as='h1'> {title} </span>
+                <span as='h1' dangerouslySetInnerHTML={{__html: title}} />
             </div>
 
             <div className="icon">{img()}</div>
