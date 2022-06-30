@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
 import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton";
-import { getPage } from "../../database/PageDB.js"
 import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
+import { getOptions } from "../../database/OptionsDB";
 
 function AppointmentsPage() {
 	const [page, setPage] = useState(0)
 
 	useEffect(() => {
-		getPage("consultas").then(p => {
+		getOptions("consultas").then(p => {
 			setPage(p)
 		})
 	}, [])
