@@ -8,9 +8,9 @@ import ScheduledAppointmentPage from './pages/consultaAgendada/ScheduledAppointm
 import SqueezeInPage from './pages/encaixeEmail/SqueezeInPage';
 import SchedulePage from './pages/agendamentoNaHora/SchedulePage';
 import NewPatientPage from './pages/pacienteNovo/NewPatientPage';
+import SpecialtiesPage from './pages/especialidades/SpecialtiesPage';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
-import SpecialtiesPage from './pages/especialidades/SpecialtiesPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
