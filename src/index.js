@@ -17,13 +17,13 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<WelcomePage />} />
+      <Route path="/especialidades" element={<SpecialtiesPage />} />
       <Route path="/novo" element={<NewPatientPage />} />
       <Route path="/cadastrado" element={<OldPatientPage />} />
       <Route path="/consultas" element={<AppointmentsPage />} />
       <Route path="/agendada" element={<ScheduledAppointmentPage />} />
       <Route path="/encaixe" element={<SqueezeInPage />} />
       <Route path="/agendamento" element={<SchedulePage />} />
-      <Route path="/especialidades" element={<SpecialtiesPage />} />
     </Routes>
   </BrowserRouter>
 );
