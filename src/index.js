@@ -9,6 +9,8 @@ import SqueezeInPage from './pages/encaixeEmail/SqueezeInPage';
 import SchedulePage from './pages/agendamentoNaHora/SchedulePage';
 import EditNewPatientPage from "./pages/admin/edition/pacienteNovo/EditPacienteNovo"
 import NewPatientPage from './pages/pacienteNovo/NewPatientPage';
+import ProceduresPage from './pages/procedimentos/ProceduresPage';
+import ServicesPage from './pages/atendimento/ServicesPage';
 import SpecialtiesPage from './pages/especialidades/SpecialtiesPage';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
@@ -21,6 +23,8 @@ root.render(
       <Route path="/especialidades" element={<SpecialtiesPage />} />
       <Route path="/novo" element={<NewPatientPage />} />
       <Route path="/cadastrado" element={<OldPatientPage />} />
+      <Route path="/procedimentos" element={<ProceduresPage />} />
+      <Route path="/atendimento" element={<ServicesPage />} />
       <Route path="/consultas" element={<AppointmentsPage />} />
       <Route path="/agendada" element={<ScheduledAppointmentPage />} />
       <Route path="/encaixe" element={<SqueezeInPage />} />

@@ -24,15 +24,26 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     font-size: 20px;
 }
 
-.PageHeader > .icon{
-  position: relative;
-  top: 20px;
+.PageHeader > .icon {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 171px;
   display: flex;
   justify-content: center;
-  height: 58px;
+  height: 71px;
+}
+
+.PageHeader > .icon > img {
+  height: 71px;
+}
+
+.PageHeader .title p {
+  margin-bottom: 0px;
+  text-align: left;
 }
