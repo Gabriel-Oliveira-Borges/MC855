@@ -1,0 +1,22 @@
+.cronogram .day {
+    margin-top: 56px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #5845ED;
+}
+
+.cronogram .time {
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #7BA3FF;
+}
+
+.cronogram .activities {
+    margin-bottom: 8px;
+}
+
+.cronogram .activities p {
+    margin-bottom: 0px;
+}
