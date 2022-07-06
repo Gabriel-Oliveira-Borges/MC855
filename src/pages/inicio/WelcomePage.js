@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import BasicPage from '../../components/basicPage/BasicPage'
 import MedicalSpecialtyButton from "../../components/medicalSpecialtyButton/medicalSpecialtyButton"
-import { getPage } from "../../database/PageDB.js"
 import PageContentOptions from "../../components/pageContentOptions/PageContentOptions";
+import { getOptions } from "../../database/OptionsDB";
 import "./WelcomePage.css";
 
 
@@ -10,7 +10,7 @@ function WelcomePage() {
 	const [page, setPage] = useState(0)
 
 	useEffect(() => {
-		getPage("welcome").then(p => {
+		getOptions("welcome").then(p => {
 			setPage(p)
 		})
 	}, [])

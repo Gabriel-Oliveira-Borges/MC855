@@ -7,9 +7,11 @@ import AppointmentsPage from './pages/consultas/AppointmentsPage';
 import ScheduledAppointmentPage from './pages/consultaAgendada/ScheduledAppointmentPage';
 import SqueezeInPage from './pages/encaixeEmail/SqueezeInPage';
 import SchedulePage from './pages/agendamentoNaHora/SchedulePage';
+import EditNewPatientPage from "./pages/admin/edition/pacienteNovo/EditPacienteNovo"
 import NewPatientPage from './pages/pacienteNovo/NewPatientPage';
 import ProceduresPage from './pages/procedimentos/ProceduresPage';
 import ServicesPage from './pages/atendimento/ServicesPage';
+import SpecialtiesPage from './pages/especialidades/SpecialtiesPage';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
 
@@ -18,6 +20,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<WelcomePage />} />
+      <Route path="/especialidades" element={<SpecialtiesPage />} />
       <Route path="/novo" element={<NewPatientPage />} />
       <Route path="/cadastrado" element={<OldPatientPage />} />
       <Route path="/procedimentos" element={<ProceduresPage />} />
@@ -26,6 +29,7 @@ root.render(
       <Route path="/agendada" element={<ScheduledAppointmentPage />} />
       <Route path="/encaixe" element={<SqueezeInPage />} />
       <Route path="/agendamento" element={<SchedulePage />} />
+      <Route path="/admin/novo" element={<EditNewPatientPage />} />
     </Routes>
   </BrowserRouter>
 );

@@ -3,6 +3,10 @@ const images = {
         path: "images/Heart.png",
         altText: "Coração"
     },
+    HEART_HAND: {
+        path: "images/HeartHand.png",
+        altText: "Ilustração de uma mão segurando um coração"
+    },
     DOCTOR: {
         path: "images/Doctor.png",
         altText: "Ilustração de um médico homem"
