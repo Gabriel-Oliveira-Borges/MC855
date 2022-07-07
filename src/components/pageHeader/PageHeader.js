@@ -3,7 +3,7 @@ import "./PageHeader.css";
 import ImageMap from "../../constants/images"
 import { Link } from 'react-router-dom'
 
-function BasicPage({ title, icon, comeBackTo}) {
+function PageHeader({ title, icon, comeBackTo, editionMode }) {
     const img = () => {
         if (icon === undefined) {
             return null
@@ -14,24 +14,32 @@ function BasicPage({ title, icon, comeBackTo}) {
 
     return (
         <div className="PageHeader">
-            { 
-                comeBackTo ? 
-                <div className="breadcrumb" > 
-                    <Link className='link' to={comeBackTo}>
-                        <i className="angle left icon"></i>
-                        Voltar 
-                    </Link>
-                </div> 
-                : null
+            {
+                comeBackTo ?
+                    <div className="breadcrumb" >
+                        <Link className='link' to={comeBackTo}>
+                            <i className="angle left icon"></i>
+                            Voltar
+                        </Link>
+                    </div>
+                    : null
             }
 
-            <div className="title" style={ comeBackTo ? {padding: "30px 10px 20px 10px"} : {}}>
-                <span as='h1' dangerouslySetInnerHTML={{__html: title}} />
+            <div className="title" style={comeBackTo ? { padding: "30px 10px 20px 10px" } : {}}>
+                {
+                    editionMode ?
+                        <div>
+                            <span as='h1'>Você está editando essa página</span> 
+                            <span as='h1' dangerouslySetInnerHTML={{ __html: title }} />
+                        </div>
+                        :
+                        <span as='h1' dangerouslySetInnerHTML={{ __html: title }} />
+                }
             </div>
 
             <div className="icon">{img()}</div>
         </div>
-	)
+    )
 }
 
-export default BasicPage;
+export default PageHeader;

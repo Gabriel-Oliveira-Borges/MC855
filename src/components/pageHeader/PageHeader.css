@@ -22,11 +22,17 @@
 .PageHeader > .title{
     padding: 85px 10px 20px 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
     font-size: 20px;
+}
+
+.PageHeader .title div{
+  display: flex;
+  flex-direction: column;
 }
 
 .PageHeader > .icon {
