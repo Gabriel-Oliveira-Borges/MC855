@@ -3,10 +3,6 @@ import ReactQuill from 'react-quill';
 import "./TextEditor.css";
 
 class TextEditor extends React.Component {
-  constructor(props) {
-    super(props)
-  }
- 
   render() {
     return (
         <div className="TextEditor">
