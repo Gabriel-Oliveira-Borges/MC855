@@ -29,6 +29,11 @@
     font-size: 20px;
 }
 
+.PageHeader .title div{
+  display: flex;
+  flex-direction: column;
+}
+
 .PageHeader > .icon {
   position: absolute;
   left: 50%;

@@ -7,7 +7,6 @@ import AppointmentsPage from './pages/consultas/AppointmentsPage';
 import ScheduledAppointmentPage from './pages/consultaAgendada/ScheduledAppointmentPage';
 import SqueezeInPage from './pages/encaixeEmail/SqueezeInPage';
 import SchedulePage from './pages/agendamentoNaHora/SchedulePage';
-import EditNewPatientPage from "./pages/admin/edition/pacienteNovo/EditPacienteNovo"
 import NewPatientPage from './pages/pacienteNovo/NewPatientPage';
 import ProceduresPage from './pages/procedimentos/ProceduresPage';
 import ServicesPage from './pages/atendimento/ServicesPage';
@@ -29,7 +28,6 @@ root.render(
       <Route path="/agendada" element={<ScheduledAppointmentPage />} />
       <Route path="/encaixe" element={<SqueezeInPage />} />
       <Route path="/agendamento" element={<SchedulePage />} />
-      <Route path="/admin/novo" element={<EditNewPatientPage />} />
     </Routes>
   </BrowserRouter>
 );
