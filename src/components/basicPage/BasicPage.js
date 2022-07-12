@@ -2,7 +2,7 @@ import React from "react";
 import "./BasicPage.css";
 import PageHeader from "../pageHeader/PageHeader"
 
-function BasicPage({ title, icon, content, footer, comeBackTo, editionMode}) {
+function BasicPage({ title, icon, content, footer, comeBackTo}) {
 
 	return (
 		<div className="BasicPage">
@@ -10,10 +10,9 @@ function BasicPage({ title, icon, content, footer, comeBackTo, editionMode}) {
 				title={title}
 				icon={icon}
 				comeBackTo = {comeBackTo}
-				editionMode = {editionMode}
 			/>
 
-			<div className={editionMode ? "containerEdition" : "container"}>
+			<div className="container">
 				<div className="content">
 					{content}
 				</div>

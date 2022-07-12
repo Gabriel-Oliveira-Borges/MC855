@@ -1,4 +1,20 @@
 .TextEditor{
-    min-width: 400px;
-    min-height: 800px;
+    height: 100%;
+    width: 100%;
+}
+
+.TextEditor > .quill{
+    height: 80%;
+}
+
+.TextEditor > .quill > .ql-toolbar.ql-snow{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-color: #7BA3FF;
+}
+
+.TextEditor > .quill > .ql-toolbar.ql-snow + .ql-container.ql-snow{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-color: #7BA3FF;
 }
