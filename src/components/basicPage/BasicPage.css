@@ -3,24 +3,12 @@
   min-height: 100vh;
 }
 
-.BasicPage .container, .containerEdition{
+.BasicPage .container{
   display: flex; 
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: calc(100vh - 206px);
-}
-
-.BasicPage .containerEdition .content{
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 900px;
-  padding: 56px 24px 56px 24px;
-}
-
-.BasicPage .containerEdition .footer{
-  visibility: hidden;
 }
 
 .BasicPage .container .content{

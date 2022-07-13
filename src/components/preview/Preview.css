@@ -1,0 +1,116 @@
+.Preview{
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+
+.Preview .Header{
+  height: 140px;
+  background-color: #5845ED;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.Preview .Header .breadcrumb{
+  font-size: 14px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 24px 0px 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.Preview > .Header > .breadcrumb > link > a{
+  color: #FFFFFF;
+}
+
+.Preview > .Header > .breadcrumb > link > i{
+  color: #FFFFFF !important;
+}
+
+
+.Preview .Header .title{
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 16px;
+  height: 70px;
+}
+
+.Preview .Header .title div{
+display: flex;
+flex-direction: column;
+}
+
+.Preview .Header icon {
+position: absolute;
+left: 50%;
+right: 50%;
+top: 171px;
+display: flex;
+justify-content: center;
+height: 71px;
+}
+
+.Preview .Header .pageIcon{
+  display: flex;
+  justify-content: center;
+}
+
+.Preview .Header .pageIcon > img {
+  height: 44.53px;
+  position: relative;
+}
+
+.Preview .Header .title p {
+margin-bottom: 0px;
+text-align: left;
+}
+
+.Preview .Container{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Preview .Content{
+  padding: 24px 24px 24px 24px;
+  max-width: 400px;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  color: black;
+  max-height: 350px;
+  overflow-y: auto;
+  margin-top: 40px;
+}
+
+.Preview .Footer{
+  max-width: 200px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.Preview .Footer a{
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.Preview .Footer .ui.text.container{
+  line-height: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .NewPatientPage .EditionMode{
+      flex-direction: column;
+      max-width: 400px;
+  }
+}

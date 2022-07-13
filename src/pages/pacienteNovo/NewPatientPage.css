@@ -1,22 +1,3 @@
 .NewPatientPage{
     height: 100%;
 }
-
-.NewPatientPage .EditionMode{
-    display: flex;
-    justify-content: space-between;
-    gap:50px;
-}
-
-.NewPatientPage .EditionMode .div{
-    display: flex;
-    justify-content: space-between;
-    gap:50px;
-}
-
-@media screen and (max-width: 768px) {
-    .NewPatientPage .EditionMode{
-        flex-direction: column;
-        max-width: 400px;
-    }
-}
