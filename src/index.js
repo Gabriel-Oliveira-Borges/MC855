@@ -14,6 +14,7 @@ import ServicesPage from './pages/atendimento/ServicesPage';
 import SpecialtiesPage from './pages/especialidades/SpecialtiesPage';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
+import InicioAdminPage from './pages/admin/inicio/InicioAdmin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
       <Route path="/encaixe" element={<SqueezeInPage />} />
       <Route path="/agendamento" element={<SchedulePage />} />
       <Route path="/admin/edit/:pageId" element={<EditionPage/>} />
+      <Route path="/admin/inicio" element={<InicioAdminPage/>} />
     </Routes>
   </BrowserRouter>
 );
