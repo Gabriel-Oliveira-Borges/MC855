@@ -1,0 +1,32 @@
+.SaveButton {
+    font-family: 'Nunito' !important;
+    font-weight: 600 !important;
+    font-size: 12px;
+    border-radius: 18px !important;
+    background-color: #5845ED !important;
+    color: #FFFFFF !important;
+    text-transform: uppercase !important;
+}
+
+.SaveButton:hover {
+    background-color: #3A25DA !important;
+}
+
+.SaveButton:active {
+    background-color: #B1A7FF !important;
+}
+
+.SavedMessage.clicked {
+    display: block;
+    position: absolute;
+    opacity: 60%;
+}
+
+.SavedMessage {
+    display: none;
+    justify-content: center !important;
+    font-family: 'Nunito' !important;
+    font-weight: 800 !important;
+    font-size: 14px;
+    padding-top: 4px;
+}

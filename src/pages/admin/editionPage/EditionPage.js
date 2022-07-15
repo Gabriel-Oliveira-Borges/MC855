@@ -17,8 +17,8 @@ function EditionPage() {
 		})
 	}, [])
 
-	const handleChange = (value) => {
-		setPage({...page, body:value})
+	const handleChange = (key, text) => {
+		setPage({...page, [key]:text})
 	}
 
 	return (

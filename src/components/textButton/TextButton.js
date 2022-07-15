@@ -4,7 +4,7 @@ import './TextButton.css'
 
 const TextButton = (props) => {
     return (
-        <div className='TextButton ui text container text-button'>
+        <div className='TextButton ui text text-button'>
             <Link className='link' to={props.link}>
                 {props.text}
             </Link>
