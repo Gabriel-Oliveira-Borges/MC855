@@ -71,5 +71,9 @@
 }
 
 .InicioAdminPageContent .InicioAdminPageContentOption.only{
-    width: 50%;
+    width: 48%;
+}
+
+.EditionPageContentTextEditorDescription {
+    margin-top: 150px !important;
 }
