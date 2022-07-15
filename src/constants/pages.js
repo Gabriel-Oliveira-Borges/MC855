@@ -33,5 +33,10 @@ export default {
         "id": "atendimento",
         "icon": "DOCTOR3",
         "adminDescription": "<p>- Remarcar consulta</p><p> - Pedir relatório, receita ou exames</p><p> - Fazer uma pergunta</p>"
+    },
+    "ESPECIALIDADES": {
+        "id": "especialidades",
+        "icon": "HEART_HAND",
+        "adminDescription": "Ver especialidades do laboratório de pediatria"
     }
 }
