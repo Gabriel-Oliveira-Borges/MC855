@@ -1,0 +1,75 @@
+.InicioAdminPage{
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.InicioAdminPageContent{
+    max-width: 900px;
+}
+
+.InicioAdminPageContent a{
+    font-weight: 800;
+    font-size: 16px;
+    color: #5845ED;
+}
+
+.InicioAdminPageContent p{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 50px 0px 50px 0px;
+};
+
+.InicioAdminPageContent .Option .description{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 20px 0px 20px 0px;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option{
+    max-width: 430px;
+    max-height: 90px;
+    width: 100%;
+    
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option .ui.card{
+    width: 100%;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option .ui.card>.content{
+    font-size: 16px;
+    max-width: 430px;
+    max-height: 90px;
+    width: 100%;
+    padding: 16px 24px 16px 24px !important;
+
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option .ui.card>.content img{
+    max-width: 48px;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option  .ui.card>.content p, .ui.cards>.card>.content p {
+    margin: 0 0 0em;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption .Option .ui.card .ui.grid>[class*="twelve wide"].column{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.InicioAdminPageContent .InicioAdminPageContentOption.only{
+    width: 50%;
+}
