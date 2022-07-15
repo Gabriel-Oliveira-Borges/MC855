@@ -84,18 +84,6 @@ function InicioAdminPage() {
                             key={pages["AGENDAR_CONSULTA_NA_HORA"].id}
                         />
                 </div>
-
-                <p> Também podemos editar os horários de atendimento das especialidades: </p>
-
-                <div className="InicioAdminPageContentOption">
-                        <Option
-                            className="link-option"
-                            link={"/admin/edit/"+pages["ESPECIALIDADES"].id}
-                            image={ImageMap[pages["ESPECIALIDADES"].icon].path}
-                            description={pages["ESPECIALIDADES"].adminDescription}
-                            key={pages["ESPECIALIDADES"].id}
-                        />
-                </div>
             </div>
 		</div>
 	)
